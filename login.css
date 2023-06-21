@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.logo img {
+    margin-left: 50px;
+    height: 40px;
+}
+
+.nav-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-header ul li {
+    font-size: 14px;
+    margin-left: 20px;
+    padding: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.nav-header ul li:hover {
+    background-color: #202020;
+}
+
+.nav-header ul li a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.search-bar {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.search-bar button {
+    background-color: #fd0000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.conta img {
+    margin-left: 200px;
+    width: 40px;
+    height: 40px;
+}
+
+.carrinho img {
+    margin-left: 20px;
+    margin-right: 150px;
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    padding: 70px;
+    background-image: url(assets/geral/bg.jpg);
+    background-size: 100%;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login-container div img {
+    height: 150px;
+    margin-left: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #fd0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3333;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #fd0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 300px;
+}
+
+.footer-content p {
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+}
+
+.footer-content p img {
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais a {
+    margin: 0 15px;
+}
+
+.redes-sociais img {
+    height: 40px;
+    width: 40px;
+}
+
+.atendimento {
+    margin-top: 70px;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.atendimento ul {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.atendimento ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.atendimento ul li a:hover {
+    text-decoration: underline;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+}
+
+.contatos p {
+    color: #ffffff;
+}
+
+.telefone-img, .whatsapp-img {
+    height: 40px;
+    width: 40px;
+    margin: 0 15px;
+}

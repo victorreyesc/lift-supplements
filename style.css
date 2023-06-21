@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.logo img {
+    margin-left: 50px;
+    height: 40px;
+}
+
+.nav-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-header ul li {
+    font-size: 14px;
+    margin-left: 20px;
+    padding: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.nav-header ul li:hover {
+    background-color: #202020;
+}
+
+.nav-header ul li a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.search-bar {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.search-bar button {
+    background-color: #fd0000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.conta img {
+    margin-left: 200px;
+    width: 40px;
+    height: 40px;
+}
+
+.carrinho img {
+    margin-left: 20px;
+    margin-right: 150px;
+    width: 40px;
+    height: 40px;
+}
+
+#section-main {
+    background-image: url(assets/home/roupas.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding: 300px;
+    text-align: left;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #fd0000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff3333;
+}
+
+#section-cat {
+    background-color: #fd0000;
+}
+
+.filtros img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.ordem img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.nav-cat {
+    display: flex;
+    align-items: center;
+}
+
+.nav-cat ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-cat li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fd0000;
+    color: white;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.nav-cat li:last-child {
+    margin-right: 0;
+}
+
+.nav-cat li:hover {
+    background-color: #ff3333;
+}
+
+.produtos {
+    background-color: white;
+}
+
+.produtos ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.produtos li {
+    flex-basis: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.produtos li a {
+    text-decoration: none;
+}
+
+.produtos li h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.produtos img {
+    height: 150px;
+}
+
+.produtos img:hover {
+    cursor: pointer;
+}
+
+.produtos h4 {
+    margin-top: 10px;
+    color: #fd0000;
+}
+
+.produtos h3 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.comprar {
+    background-color: #fd0000;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.produtos div {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ver-mais {
+    background-color: #202020;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#parceiros {
+    background-color: #fd0000;
+    background-size: 100%;
+    padding: 50px;
+}
+
+#parceiros h2 {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.carrossel {
+    margin-top: 100px;
+    display: block;
+    height: 480px;
+    width: 854px;
+    margin: auto;
+    position: relative;
+}
+
+.carrossel li {
+    list-style: none;
+    position: absolute;
+}
+
+.carrossel img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    border: solid #ffffff;
+}
+
+.carrossel input {
+    display: none;
+}
+
+.carrossel input:checked + label {
+    background-color: #fd0000;
+}
+
+.carrossel label {
+    background-color: #000000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    z-index: 10;
+    border: solid #ffffff 0.1px;
+}
+
+.carrossel label:hover {
+    background-color: #fd0000;
+}
+
+.carrossel li:nth-child(1) label {
+    left: 10px;
+}
+
+.carrossel li:nth-child(2) label {
+    left: 40px;
+}
+
+.carrossel li:nth-child(3) label {
+    left: 70px;
+}
+
+.carrossel li:nth-child(4) label {
+    left: 100px;
+}
+
+.carrossel li:nth-child(5) label {
+    left: 130px;
+}
+
+.carrossel li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+#sobre {
+    padding: 50px;
+}
+
+#sobre h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fd0000;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+}
+
+.sobre img {
+    width: 350px;
+    margin-right: 25px;
+}
+
+.sobre p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 300px;
+}
+
+.footer-content p {
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+}
+
+.footer-content p img {
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais a {
+    margin: 0 15px;
+}
+
+.redes-sociais img {
+    height: 40px;
+    width: 40px;
+}
+
+.atendimento {
+    margin-top: 70px;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.atendimento ul {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.atendimento ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.atendimento ul li a:hover {
+    text-decoration: underline;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+}
+
+.contatos p {
+    color: #ffffff;
+}
+
+.telefone-img, .whatsapp-img {
+    height: 40px;
+    width: 40px;
+    margin: 0 15px;
+    margin-top: -10px;
+}
